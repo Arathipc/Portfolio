@@ -31,7 +31,7 @@ const Projects = ({ darkMode }) => {
       description: 'Developed a skin cancer classification application using EfficientNetB7 with TensorFlow and Keras, featuring image preprocessing for improved accuracy and a Tkinter-based GUI for real-time prediction and user interaction.',
       technologies: ['Python', 'TensorFlow', 'Keras', 'Tkinter'],
       
-      image: '/src/assets/image/skincancer.png'
+      image: 'skincancer.jpeg'
     },
     
   ];
