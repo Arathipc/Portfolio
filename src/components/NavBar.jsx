@@ -41,7 +41,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
   };
 
   return (
-    <nav className={`top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       darkMode 
         ? 'bg-gray-900/95 backdrop-blur-sm border-b border-gray-800' 
         : 'bg-white/95 backdrop-blur-sm border-b border-gray-200'

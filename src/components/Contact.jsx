@@ -24,10 +24,10 @@ const Contact = ({ darkMode }) => {
     setSubmitStatus(null);
 
     try {
-      // Use environment variable for API URL
-      // On Vercel: empty string uses relative path /api/contact
-      // Locally: uses http://localhost:3001/api/contact
-      const apiUrl = process.env.REACT_APP_API_URL || '';
+      // Use Vite environment variable for API URL
+      // On Vercel: leave VITE_API_URL blank so the function uses relative path /api/contact
+      // Locally: set VITE_API_URL=http://localhost:3001 in .env.local
+      const apiUrl = import.meta.env.VITE_API_URL || '';
       const endpoint = apiUrl ? `${apiUrl}/api/contact` : '/api/contact';
       
       const response = await fetch(endpoint, {
