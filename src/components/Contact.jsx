@@ -24,7 +24,13 @@ const Contact = ({ darkMode }) => {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('http://localhost:3001/api/contact', {
+      // Use environment variable for API URL
+      // On Vercel: empty string uses relative path /api/contact
+      // Locally: uses http://localhost:3001/api/contact
+      const apiUrl = process.env.REACT_APP_API_URL || '';
+      const endpoint = apiUrl ? `${apiUrl}/api/contact` : '/api/contact';
+      
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
