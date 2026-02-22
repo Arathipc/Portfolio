@@ -9,23 +9,22 @@ const Projects = ({ darkMode }) => {
       description: 'A modern, responsive portfolio website built with React and Framer Motion, featuring smooth animations and dark mode support.',
       technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Vite'],
       github: 'https://github.com/Arathipc/Portfolio',
-      demo: 'https://portfolio-demo.com',
-      image: '/src/assets/image/portfolio.png'
+     
+      image: '/portfolio.png'
     }
     ,{
       title: 'Payment Slip Generator',
       description: 'Developed a payment slip management system using the MERN stack (MongoDB, Express.js, React, and Node.js) that allows users to add, edit, and delete employee records. The application automatically calculates net salary by deducting leave payments, providing an efficient and user-friendly payroll management solution',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express.js'],
       github: 'https://github.com/Arathipc/PayForm',
-      image: 'src/assets/image/payform.png'
+      image: '/payform.png'
     },
     {
       title: 'Tastey Tales',
       description: 'Developed a full-stack recipe management web application using React, Node.js, Express.js, and MongoDB. The platform allows users to create, view, like, and comment on recipes, with secure JWT-based authentication and protected routes. Users can manage their own posts with full CRUD functionality, including editing and deleting their recipes.',
       technologies: ['React', 'Firebase', 'Tailwind CSS', 'Framer Motion'],
       github: 'https://github.com/Arathipc/tastytales',
-    
-      image: '/src/assets/image/tastytales.png'
+     image: '/tastytales.png'
     },
     {
       title: 'Automatic Skin cancer detection system',
